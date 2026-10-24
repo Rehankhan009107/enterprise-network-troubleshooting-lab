@@ -35,3 +35,29 @@ This project demonstrates an enterprise network with VLAN segmentation, inter-VL
 
 ## Author
 Mohammad Rameez — Network Engineer
+## Verification and Troubleshooting
+
+### Connectivity Tests
+- Verified connectivity to the VLAN 10 default gateway: `192.168.10.1`
+- Verified connectivity to the VLAN 20 default gateway: `192.168.20.1`
+- Tested inter-VLAN connectivity to validate routing.
+
+### Security Validation
+- Configured an extended ACL to block Guest VLAN traffic to Corporate VLAN.
+- Permitted other IP traffic according to the ACL rules.
+- Verified router subinterfaces were operational.
+
+### Troubleshooting Commands
+- `show ip interface brief`
+- `show vlan brief`
+- `show interfaces trunk`
+- `show access-lists`
+- `ping`
+- `tracert`
+
+### Skills Demonstrated
+- VLAN segmentation and 802.1Q trunking
+- Router-on-a-stick inter-VLAN routing
+- Extended ACL configuration and verification
+- Network connectivity troubleshooting
+
